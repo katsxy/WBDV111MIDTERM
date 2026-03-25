@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DaMusic Album</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background: #1A1A1D;
+    color:white;
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:230px;
+    background:#000;
+    padding:25px;
+    height:100vh;
+    border-right:1px solid #1db95433;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+    color:#D0BDF0;
+}
+
+.sidebar button{
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+    background:#D0BDF0;
+    border:none;
+    border-radius:25px;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar button:hover{
+    box-shadow:0 0 15px #D0BDF0;
+}
+
+/* MAIN */
+.main{
+    flex:1;
+    padding:25px 40px;
+}
+
+/* TOP NAV */
+.topnav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+/* GLOWING SEARCH */
+.search{
+    background:#1a1a1a;
+    padding:12px 20px;
+    border-radius:30px;
+    border:2px solid #D0BDF0;
+    width:320px;
+    color:white;
+    outline:none;
+    transition:0.3s;
+}
+
+.search:focus{
+    box-shadow:0 0 15px #D0BDF0;
+}
+
+/* NAV BUTTONS */
+.nav-buttons button{
+    margin-left:10px;
+    padding:10px 18px;
+    border-radius:25px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.profile{
+    background:#D0BDF0;
+    color:black;
+}
+
+.profile:hover{
+    box-shadow:0 0 15px #D0BDF0;
+}
+
+/* SECTION TITLE */
+.section-title{
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+/* CARD GRID */
+.card-row{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background: #D0BDF0;
+    padding:15px;
+    border-radius:15px;
+    width:220px;
+    transition:0.3s;
+}
+
+.card:hover{
+    background: #D0BDF0;
+    transform:scale(1.05);
+}
+
+.card img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.card h4{
+    margin-bottom:5px;
+}
+
+.card p{
+    color:#D0BDF0;
+    font-size:14px;
+}
+
+/* NEON AUDIO */
+audio{
+    width:100%;
+    margin-top:10px;
+    filter: drop-shadow(0 0 5px #D0BDF0);
+}
+
+/* ADD BUTTON */
+.add-btn{
+    margin-top:8px;
+    padding:6px;
+    width:100%;
+    background:#372745;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.add-btn:hover{
+    box-shadow:0 0 10px #D0BDF0;
+}
+
+/* STATS PANEL */
+.stats{
+    margin-top:40px;
+    padding:20px;
+    background:#D0BDF0;
+    border-radius:15px;
+    border:1px solid #D0BDF0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>≽ ^⎚ DaMusic ⎚^ ≼</h2>
+    <button onclick="viewPlaylist()">View Playlist ა૮</button>
+    <button onclick="showStats()">View Stats ა૮</button>
+</div>
+
+<div class="main">
+
+    <div class="topnav">
+        <input type="text" class="search" id="searchInput" placeholder="Search Track..." onkeyup="searchTrack()">
+        <div class="nav-buttons">
+            <button class="profile">Profile ᨐฅ</button>
+        </div>
+    </div>
+
+    <h3 class="section-title">Trending Songs ᓚ₍⑅^..^₎♡</h3>
+
+    <div class="card-row" id="songContainer">
+
+        <div class="card" data-title="The Only Exception">
+            <img src="toe.jpg">
+            <h4>The Only Exception</h4>
+            <p>Paramore</p>
+            <audio controls onplay="trackPlayed()">
+                <source src="toe.mp3" type="audio/mpeg">
+            </audio>
+            <button class="add-btn" onclick="addToPlaylist('The Only Exception')">Add to Playlist</button>
+        </div>
+
+        <div class="card" data-title="About You">
+            <img src="ay.jpg">
+            <h4>About You</h4>
+            <p>The 1975</p>
+            <audio controls onplay="trackPlayed()">
+                <source src="ay.mp3" type="audio/mpeg">
+            </audio>
+            <button class="add-btn" onclick="addToPlaylist('About You')">Add to Playlist</button>
+        </div>
+		
+		<div class="card" data-title="No.1 Party Anthem">
+            <img src="nap.jpg">
+            <h4>No.1 Party Anthem</h4>
+            <p>Artic Monkeys</p>
+            <audio controls onplay="trackPlayed()">
+                <source src="nap.mp3" type="audio/mpeg">
+            </audio>
+            <button class="add-btn" onclick="addToPlaylist('No.1 Party Anthem')">Add to Playlist</button>
+        </div>
+		
+		<div class="card" data-title="Give It Up to Me">
+            <img src="git.jpg">
+            <h4>Give It Up to Me</h4>
+            <p>Artic Monkeys</p>
+            <audio controls onplay="trackPlayed()">
+                <source src="giutm.mp3" type="audio/mpeg">
+            </audio>
+            <button class="add-btn" onclick="addToPlaylist('Give It Up to Me')">Add to Playlist</button>
+        </div>
+
+    </div>
+
+    <div class="stats" id="statsPanel" style="display:none;">
+        <h3>Your Stats</h3>
+        <p>Tracks Played: <span id="playCount">0</span></p>
+        <p>Tracks in Playlist: <span id="playlistCount">0</span></p>
+    </div>
+
+</div>
+
+<script>
+let playCounter = 0;
+let playlist = [];
+
+function trackPlayed(){
+    playCounter++;
+    document.getElementById("playCount").innerText = playCounter;
+}
+
+function addToPlaylist(song){
+    playlist.push(song);
+    document.getElementById("playlistCount").innerText = playlist.length;
+    alert(song + " added to playlist!");
+}
+
+function viewPlaylist(){
+    alert("Playlist:\n" + playlist.join("\n"));
+}
+
+function showStats(){
+    document.getElementById("statsPanel").style.display = "block";
+}
+
+function searchTrack(){
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        let title = card.getAttribute("data-title").toLowerCase();
+        if(title.includes(input)){
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+}
+</script>
+
+</body>
+</html>

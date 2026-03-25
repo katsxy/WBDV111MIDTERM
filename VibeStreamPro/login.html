@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("loginbg2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+    }
+
+    .login-card {
+        background-image: url("loginbg.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+        padding: 40px 30px;
+        width: 320px;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .login-card h2 {
+        color: white;
+        margin-bottom: 10px;
+		text-decoration: underline overline;
+		text-decoration-color: #D0BDF0;
+    }
+
+    .login-card p {
+        font-size: 13px;
+        color: #D0BDF0;
+        margin-bottom: 20px;
+    }
+
+    .login-card input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
+    .login-card button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 8px;
+        background: #D0BDF0;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .login-card button:hover {
+        background: black;
+    }
+
+    .extra-links {
+        margin-top: 15px;
+        font-size: 12px;
+    }
+
+    .extra-links a {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="login-card">
+    <h2>DaMusic</h2>
+    <p>Log in to your rhythm</p>
+
+    <input type="email" placeholder="Email Address">
+    <input type="password" placeholder="Password">
+
+    <a href="music.html"> <button>ฅ Sign In ᨐ</button> </a>
+
+    <div class="extra-links">
+        <p><a href="#">Forgot Password?</a></p>
+        <p>New here? <a href="#">Sign up</a></p>
+    </div>
+</div>
+
+</body>
+</html>

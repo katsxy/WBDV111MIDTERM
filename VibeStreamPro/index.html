@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DaMusic</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #EDE3FF;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: #EDE3FF;
+    padding: 12px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Left Login Box */
+.login-box {
+    background: black;
+    padding: 6px 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-btn {
+    background: #D0BDF0;
+    color: black;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+	font-weight: bold;
+}
+
+.signup-btn {
+    background: #D0BDF0;
+    color: black;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+	font-weight: bold;
+}
+
+/* Center Logo */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Right Links */
+.nav-links a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 830px;
+    background-image: url("homebg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    margin: 0 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.explore {
+    background: white;
+    color: black;
+}
+
+.latest {
+    border: 2px solid white;
+    color: white;
+}
+
+.hero-buttons a:hover {
+    opacity: 0.8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+    <!-- LEFT LOGIN -->
+    <div class="login-box">
+        <button class="signup-btn"> ᓚ₍⑅^..^₎ Sign up </button>
+        <a href="login.html"> <button class="login-btn"> ₍^. .^₎⟆ Login </button> </a>
+    </div>
+
+    <!-- CENTER LOGO -->
+    <div class="logo">
+        ≽ ^⎚ DaMusic ⎚^ ≼
+    </div>
+
+    <!-- RIGHT LINKS -->
+    <div class="nav-links">
+        <a href="#"> ᨐฅ Home</a>
+        <a href="#"> ᨐฅ Artists</a>
+        <a href="#"> ᨐฅ Playlists</a>
+    </div>
+
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>You just found your new anthem!</h1>
+        <p>────────୨ৎ────────</p>
+
+        <div class="hero-buttons">
+            <a href="#" class="explore"> ۶ৎ Start Listening</a>
+            <a href="#" class="latest">۶ৎ Trending Now</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
