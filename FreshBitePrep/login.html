@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FreshBite Prep - Login</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image:url("bgf.jpg.png");
+    background-size:cover;
+    background-position:center;
+}
+
+/* Login Box */
+.login-container{
+    background:rgba(255,255,255,0.9);
+    padding:40px;
+    border-radius:15px;
+    width:350px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.login-container h2{
+    margin-bottom:25px;
+    color:#2e7d32;
+}
+
+/* Input fields */
+.input-group{
+    margin-bottom:15px;
+    text-align:left;
+}
+
+.input-group label{
+    font-size:14px;
+    color:#333;
+}
+
+.input-group input{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* Button */
+.btn{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:none;
+    border-radius:25px;
+    background:#2e7d32;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#1b5e20;
+}
+
+/* Back link */
+.back{
+    margin-top:15px;
+    display:block;
+    text-decoration:none;
+    color:#2e7d32;
+    font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login-container">
+
+<h2>Login</h2>
+
+<form action="menu.html">
+    <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" required>
+    </div>
+
+    <button class="btn">Login</button>
+</form>
+
+<a href="home.html" class="back">← Back to Home</a>
+
+</div>
+
+</body>
+</html>
