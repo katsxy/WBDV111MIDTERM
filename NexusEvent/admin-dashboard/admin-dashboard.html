@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="admin-dashboard.css">
+<script defer src="admin-dashboard.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">Nexus Events</div>
+
+    <div class="actions">
+        <button onclick="location.href='../index.html'">Back to Site</button>
+        <button id="logoutBtn">Log Out</button>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- TOP -->
+    <section class="top">
+
+        <div class="left">
+            <h1>Admin Index</h1>
+            <p>
+                Quick control of events, tickets, venue operations,
+                and guest messages. Keep every Nexus night running smooth.
+            </p>
+
+            <div class="btns">
+                <button class="pink">+ New Event</button>
+                <button class="yellow">Update Ticket Tiers</button>
+            </div>
+        </div>
+
+        <div class="right-card">
+            <h3>Tonight’s Headliner</h3>
+            <p>Midnight Runway • 10:00 PM • Main Hall</p>
+
+            <div class="tags">
+                <span>Crew Ready</span>
+                <span>Stage Check</span>
+                <span>VIP List</span>
+            </div>
+
+            <button class="pink">View Public Page</button>
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="box">1,248<br><span>Tickets sold today</span></div>
+        <div class="box">92%<br><span>Venue capacity booked</span></div>
+        <div class="box">18<br><span>Active staff on duty</span></div>
+        <div class="box">6<br><span>Open support tickets</span></div>
+    </section>
+
+    <!-- MAIN GRID -->
+    <section class="grid">
+
+        <!-- EVENTS -->
+        <div class="card">
+            <h2>Upcoming Events</h2>
+
+            <!-- HEADER -->
+            <div class="row table-header">
+                <span>Event</span>
+                <span>Date</span>
+                <span>Status</span>
+            </div>
+
+            <!-- EVENTS -->
+            <div class="row">
+                <span>Pixel Mirage</span>
+                <span>May 3</span>
+                <span class="status green">On Track</span>
+            </div>
+
+            <div class="row">
+                <span>Velvet Frequency</span>
+                <span>May 5</span>
+                <span class="status green">On Track</span>
+            </div>
+
+            <div class="row">
+                <span>Urban Canvas Jam</span>
+                <span>June 8</span>
+                <span class="status green">Confirmed</span>
+            </div>
+
+            <div class="row">
+                <span>Afterglow Sessions</span>
+                <span>June 10</span>
+                <span class="status yellow">Staffing</span>
+            </div>
+
+        </div>
+
+        <!-- TICKET PULSE -->
+        <div class="card">
+            <h2>Ticket Pulse</h2>
+
+            <p>Pulse Pass</p>
+            <div class="bar"><div style="width:70%"></div></div>
+
+            <p>Glow Pass</p>
+            <div class="bar"><div style="width:54%"></div></div>
+
+            <p>Orbit Pass</p>
+            <div class="bar"><div style="width:32%"></div></div>
+
+            <button class="action-btn">Adjust Pricing</button>
+            <button class="action-btn">Export List</button>
+        </div>
+
+        <!-- VENUE OPS -->
+        <div class="card">
+            <h2>Venue Ops</h2>
+
+            <div class="pill green">Ready - Stage lighting rig checked</div>
+            <div class="pill green">Ready - Market lane vendor load-in</div>
+            <div class="pill yellow">Pending - Rooftop sound calibration</div>
+            <div class="pill pink">Alert - VIP lounge restock</div>
+        </div>
+
+    </section>
+
+    <!-- GUEST INBOX -->
+    <section class="inbox">
+
+        <h2>Guest Inbox</h2>
+
+        <div class="table">
+
+            <div class="table-header">
+                <span>Sender</span>
+                <span>Topic</span>
+                <span>Priority</span>
+            </div>
+
+            <div class="table-row">
+                <span>J. Alvarez</span>
+                <span>Group Booking</span>
+                <span class="priority medium">Medium</span>
+            </div>
+
+            <div class="table-row">
+                <span>Press Studio</span>
+                <span>Media Pass</span>
+                <span class="priority high">High</span>
+            </div>
+
+            <div class="table-row">
+                <span>Merch Lab</span>
+                <span>Inventory</span>
+                <span class="priority low">Low</span>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© <span id="year"></span> Nexus Events • All rights reserved.</p>
+</footer>
+
+</body>
+</html>

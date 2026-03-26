@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg, #ffd6e0, #d4f1f4);
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#f5efe6;
+    border-bottom:2px solid black;
+}
+
+.logo{
+    font-weight:bold;
+    padding:8px 15px;
+    border:2px solid black;
+    background:#8be9fd;
+}
+
+nav a{
+    margin:0 8px;
+    padding:8px 15px;
+    border:2px solid black;
+    border-radius:12px;
+    background:#fff;
+    text-decoration:none;
+    color:black;
+}
+
+nav a.active{
+    background:#caff70;
+}
+
+/* PARTY BUTTON */
+.party-btn{
+    border:2px solid black;
+    padding:8px 15px;
+    border-radius:12px;
+    background:#fff;
+    cursor:pointer;
+}
+
+/* CONTAINER */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:30px;
+}
+
+/* TITLE */
+.page-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* CARDS */
+.ticket-cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-bottom:40px;
+}
+
+.ticket-card{
+    background:#f5efe6;
+    border:2px solid black;
+    border-radius:15px;
+    padding:20px;
+    width:250px;
+    text-align:center;
+}
+
+.ticket-card .price{
+    display:block;
+    margin:10px 0;
+    font-weight:bold;
+}
+
+.highlight{
+    background:#eaffd0;
+}
+
+.vip{
+    background:#ffe0b2;
+}
+
+/* BUILDER */
+.builder{
+    background:#f5efe6;
+    border:2px solid black;
+    border-radius:15px;
+    padding:25px;
+}
+
+.ticket-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+/* QTY */
+.qty{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.qty button{
+    width:30px;
+    height:30px;
+    border:2px solid black;
+    background:#caff70;
+    cursor:pointer;
+}
+
+.qty input{
+    width:50px;
+    text-align:center;
+    border:2px solid black;
+}
+
+/* TOTAL */
+.total-box{
+    margin-top:20px;
+    background:#3ddc97;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* PARTY MODE */
+body.party{
+    animation: bgFlash 1s infinite alternate;
+}
+
+@keyframes bgFlash{
+    0%{background:#ffd6e0;}
+    100%{background:#caff70;}
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:15px;
+    border-top:2px solid black;
+    background:#f5efe6;
+    margin-top:30px;
+}
