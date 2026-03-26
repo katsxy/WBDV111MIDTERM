@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Patisserie</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <!-- LEFT (SEARCH ICON) -->
+    <div class="nav-left">
+        <a href="login.html" class="login-btn">Login</a>
+    </div>
+
+    <!-- CENTER MENU -->
+    <div class="nav-center">
+        <a href="menu.html">Shop</a>
+        <a href="#">Customized Cakes</a>
+        <a href="menu.html">Menu</a>
+        <a href="#">Locations</a>
+    </div>
+
+    <!-- RIGHT (CART ICON) -->
+    <div class="nav-right">
+        <a href="cart.html" style="text-decoration:none; color:#4b2e83;">
+            🛒 (<span id="cart-count">0</span>)
+        </a>
+    </div>
+</nav>
+
+<!-- SLIDER -->
+<div class="slider">
+    <div class="slides" id="slides">
+        <img src="images/pic1.jpg">
+        <img src="images/pic2.jpg">
+        <img src="images/pic3.jpg">
+    </div>
+
+    <div class="hero-text">
+        <h1>Celebration Cakes<br>for Every Occasion</h1>
+        <button onclick="location.href='menu.html'">SHOP CAKES</button>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="about">
+    <h2>Welcome to Our Patisserie</h2>
+    <p>
+        We craft cakes and pastries that turn every occasion into something special.
+        From birthdays to weddings, each creation is made with love and premium ingredients.
+    </p>
+</div>
+
+<!-- PRODUCTS -->
+<div class="products">
+    <h2>Shop Our Most Popular Creations</h2>
+
+    <div class="product-grid">
+        <div class="card">
+            <img src="images/cake.jpg">
+            <p>Cakes</p>
+        </div>
+
+        <div class="card">
+            <img src="images/macarons.jpg">
+            <p>Macarons</p>
+        </div>
+
+        <div class="card">
+            <img src="images/eclairs.jpg">
+            <p>Eclairs</p>
+        </div>
+
+        <div class="card">
+            <img src="images/cookies.jpg">
+            <p>Cookies & Snacks</p>
+        </div>
+
+        <div class="card">
+            <img src="images/gifts.jpg">
+            <p>Gifts & Hampers</p>
+        </div>
+    </div>
+
+    <div class="view-btn">
+        <button onclick="location.href='menu.html'">VIEW ALL</button>
+    </div>
+</div>
+
+<!-- LINK JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
