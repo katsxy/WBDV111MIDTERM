@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-left">
+    <a href="login.html" class="login-btn">Login</a>
+  </div>
+
+  <div class="nav-center">
+    <a href="home.html">Home</a>
+    <a href="#">Customized Cakes</a>
+    <a href="menu.html">Shop</a>
+    <a href="#">Locations</a>
+  </div>
+
+  <div class="nav-right">
+    <a href="cart.html" style="text-decoration:none; color:#4b2e83;">
+      🛒 (<span id="cart-count">0</span>)
+    </a>
+  </div>
+</nav>
+
+<!-- MENU -->
+<section class="menu">
+  <h1>Meet our Bestsellers</h1>
+
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <img src="images/p1.jpg">
+      <h3>Dubai Chocolate Cake</h3>
+      <p>₱3,800</p>
+      <button onclick="askConfirm('Dubai Chocolate Cake',3800,'images/p1.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="menu-card">
+      <img src="images/p2.jpg">
+      <h3>Matcha Cake</h3>
+      <p>₱3,200</p>
+      <button onclick="askConfirm('Matcha Cake',3200,'images/p2.jpg')">Add to Cart</button>
+    </div>
+
+    <div class="menu-card"> 
+      <img src="images/p3.jpg"> 
+      <h3>Box Of 5 Macarons</h3>
+      <p>₱370.00</p> 
+      <button onclick="askConfirm('Box Of 5 Macarons', 370, 'images/p3.jpg')">Add to Cart</button> 
+    </div> 
+
+    <div class="menu-card"> 
+      <img src="images/p4.jpg"> 
+      <h3>Box of 15 Macarons</h3> 
+      <p>₱1,000.00</p> 
+      <button onclick="askConfirm('Box of 15 Macarons', 1000, 'images/p4.jpg')">Add to Cart</button> 
+    </div> 
+
+    <div class="menu-card"> 
+      <img src="images/p5.jpg"> 
+      <h3>Box of 6 Eclairs</h3> 
+      <p>₱1,050.00</p> <button onclick="askConfirm('Box of 6 Eclairs', 1050, 'images/p5.jpg')">Add to Cart</button> 
+    </div> 
+
+    <div class="menu-card"> 
+      <img src="images/p6.jpg"> 
+      <h3>Orange Chocolate Eclair</h3> 
+      <p>₱195.00</p> <button onclick="askConfirm('Orange Chocolate Eclair', 195, 'images/p6.jpg')">Add to Cart</button> 
+    </div> 
+
+    <div class="menu-card"> 
+      <img src="images/p7.jpg"> 
+      <h3>Red Velvet Cheese Brûlée Cookie</h3> 
+      <p>₱150.00</p> <button onclick="askConfirm('Red Velvet Cookie', 150, 'images/p7.jpg')">Add to Cart</button> 
+    </div> 
+
+    <div class="menu-card"> 
+      <img src="images/p8.jpg"> 
+      <h3>Apple Crumble Chocolate Cookie</h3> 
+      <p>₱150.00</p> <button onclick="askConfirm('Apple Crumble Cookie', 150, 'images/p8.jpg')">Add to Cart</button> 
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="cart-modal" class="modal-overlay">
+  <div class="modal-box">
+    <h3 id="modal-msg"></h3>
+
+    <div id="qty-box" style="display:none;">
+      <input type="number" id="item-qty" value="1" min="1">
+    </div>
+
+    <div class="modal-actions">
+      <button id="modal-yes">Yes</button>
+      <button id="modal-no">No</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
