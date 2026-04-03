@@ -1,0 +1,79 @@
+/* RESET & BASIC */
+* { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif; }
+body { background:#0b1a3d; color:#fff; }
+
+/* CONTAINER */
+.container { display:flex; min-height:100vh; }
+
+/* SIDEBAR */
+.sidebar {
+    width:240px;
+    background:#10274f;
+    padding:30px;
+}
+.sidebar h2 { color:#4fc3f7; margin-bottom:40px; }
+.sidebar ul { list-style:none; }
+.sidebar li {
+    padding:12px 15px;
+    margin-bottom:10px;
+    cursor:pointer;
+    border-radius:8px;
+    transition:0.3s;
+}
+.sidebar li:hover,
+.sidebar .active { background:#1a3b6f; }
+
+/* MAIN */
+.main { flex:1; padding:40px; overflow:auto; }
+
+/* HERO */
+.hero { margin-bottom:40px; }
+.hero h1 { font-size:32px; margin-bottom:10px; }
+.hero p { color:#a0bce9; margin-bottom:20px; }
+
+/* HERO BUTTONS */
+.hero-buttons button{
+    margin-right:15px;
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    background:linear-gradient(135deg,#1a3b6f,#4fc3f7);
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+.hero-buttons button.secondary{ background:#0d1a36; }
+.hero-buttons button:hover{ transform:scale(1.05); }
+
+/* BENTO GRID */
+.grid { display:flex; gap:20px; margin-bottom:30px; }
+.grid .card {
+    flex:1;
+    background:#0d1a36;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+}
+.grid .card h3 { color:#a0bce9; margin-bottom:10px; }
+.grid .card p { font-size:28px; color:#4fc3f7; font-weight:700; }
+.grid .card:hover { background:#1a3b6f; }
+
+/* QUICK ACTIONS */
+.quick-actions { display:flex; gap:20px; flex-wrap:wrap; }
+.action-card {
+    flex:1;
+    min-width:180px;
+    padding:20px;
+    background:#0d1a36;
+    border-radius:12px;
+    cursor:pointer;
+    text-align:center;
+    transition:0.3s;
+}
+.action-card:hover { background:#1a3b6f; }
+.action-card i { font-size:24px; margin-bottom:10px; display:block; color:#4fc3f7; }
+
+/* FOOTER */
+footer { margin-top:40px; text-align:center; color:#5a7fa0; font-size:14px; }

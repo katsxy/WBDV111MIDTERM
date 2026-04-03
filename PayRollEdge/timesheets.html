@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Timesheets - PayRoll Edge</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>PayRoll Edge</h2>
+        <ul>
+            <li onclick="location.href='index.html'">Dashboard</li>
+            <li onclick="location.href='staff.html'">Staff</li>
+            <li class="active">Timesheets</li>
+            <li onclick="location.href='payslips.html'">Payslips</li>
+            <li onclick="location.href='tax.html'">Tax View</li>
+            <li>🔒 Secure • FaceID</li>
+        </ul>
+    </aside>
+
+    <main class="main">
+        <div class="hero">
+            <h1>Timesheet Management</h1>
+            <p>Log work hours, review staff timesheets, and ensure accurate payroll.</p>
+            <div class="hero-buttons">
+                <button onclick="location.href='timesheets.html'">Log Hours</button>
+                <button class="secondary" onclick="location.href='tax.html'">Calculate Tax</button>
+                <button class="secondary" onclick="location.href='export.html'">Export Timesheets</button>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Total Hours</h3>
+                <p>1,456</p>
+            </div>
+            <div class="card">
+                <h3>Pending Approval</h3>
+                <p>12</p>
+            </div>
+            <div class="card">
+                <h3>Approved</h3>
+                <p>1,444</p>
+            </div>
+        </div>
+
+        <div class="quick-actions">
+            <div class="action-card" onclick="location.href='timesheets.html'">
+                <i class="fa-solid fa-clock"></i>
+                Log Hours
+            </div>
+            <div class="action-card" onclick="location.href='tax.html'">
+                <i class="fa-solid fa-calculator"></i>
+                Calculate Tax
+            </div>
+            <div class="action-card" onclick="location.href='export.html'">
+                <i class="fa-solid fa-file-export"></i>
+                Export Timesheets
+            </div>
+        </div>
+
+        <footer>© 2026 PayRoll Edge Corporate</footer>
+    </main>
+</div>
+
+</body>
+</html>
